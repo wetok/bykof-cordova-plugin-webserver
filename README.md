@@ -1,3 +1,7 @@
+*For internal usage*
+*Allows to define the rootPath*
+
+
 # cordova-plugin-webserver
 *A webserver plugin for cordova*
 

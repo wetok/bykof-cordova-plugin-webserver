@@ -22,9 +22,11 @@ var STOP_FUNCTION = 'stop';
 
 function start(success_callback, error_callback, port) {
   var params = [];
-  if (port) {
-    params.push(port);
-  }
+  // if (port) {
+  //   params.push(port);
+  // }
+  params.push(port || null);
+  params.push(rootPath || null);
   (0, _exec2.default)(success_callback, error_callback, WEBSERVER_CLASS, START_FUNCTION, params);
 }
 
