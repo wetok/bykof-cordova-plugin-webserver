@@ -20,7 +20,7 @@ var ONREQUEST_FUNCTION = 'onRequest';
 var SENDRESPONSE_FUNCION = 'sendResponse';
 var STOP_FUNCTION = 'stop';
 
-function start(success_callback, error_callback, port) {
+function start(success_callback, error_callback, port, rootPath) {
   var params = [];
   // if (port) {
   //   params.push(port);
