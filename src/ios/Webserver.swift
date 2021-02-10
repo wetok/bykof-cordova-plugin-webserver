@@ -71,6 +71,15 @@
                 callbackId: self.onRequestCommand?.callbackId
             )
         }
+        else {
+            let ownPath = requestDict["path"] as! String;
+            let ownDic = [
+                "status": 200,
+                "path": ownPath,
+            "headers": ["dummy": ""] as! Dictionary<String, String>,
+            ] as!  Dictionary<AnyHashable, Any>;
+            self.responses[requestUUID] = ownDic;
+        }
 
         // Here we have to wait until the javascript block fetches the message and do a response
         while self.responses[requestUUID] == nil {
