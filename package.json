@@ -1,0 +1,50 @@
+{
+  "name": "cordova-plugin-webserver",
+  "version": "1.0.1",
+  "description": "Cordova Plugin Webserver",
+  "homepage": "https://github.com/bykof/cordova-plugin-webserver/",
+  "author": {
+    "name": "Michael Bykovski"
+  },
+  "license": "Apache-2.0",
+  "cordova": {
+    "id": "cordova-plugin-webserver",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bykof/cordova-plugin-webserver"
+  },
+  "keywords": [
+    "cordova",
+    "ios",
+    "android",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova:plugin",
+    "webserver",
+    "http",
+    "request",
+    "response"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "cordova": "^8.0.0"
+  },
+  "scripts": {
+    "build": "./node_modules/babel-cli/bin/babel.js src/www/webserver.js --out-file webserver.js"
+  },
+  "browser": {
+    "cordova": false
+  },
+  "dependencies": {
+    "universal-router": "^5.1.0"
+  }
+}
